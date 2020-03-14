@@ -50,7 +50,7 @@ class Config(object):
     # data input folder
     sub_name    = 'efros2'
     home        = os.path.expanduser("~")
-    texture_dir = "samples/"
+    texture_dir = "input/"
     data_iter   = get_texture_iter(texture_dir, npx=npx, mirror=False, batch_size=batch_size)
 
     save_name   =  "_filters%d_npx%d_%dgL_%ddL" % (dis_fn[0],npx,gen_ls, dis_ls)
